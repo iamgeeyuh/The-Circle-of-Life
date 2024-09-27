@@ -8,23 +8,61 @@
 
 /* Begin PBXBuildFile section */
 		B9400CE82CA603FA008E7E7D /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B9400CE72CA603FA008E7E7D /* main.cpp */; };
+		B9400CF32CA6046C008E7E7D /* ShaderProgram.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B9400CF12CA6046C008E7E7D /* ShaderProgram.cpp */; };
+		B9400CF62CA605CA008E7E7D /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9400CF52CA605CA008E7E7D /* OpenGL.framework */; };
+		B9400CF82CA605D1008E7E7D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9400CF72CA605D1008E7E7D /* Cocoa.framework */; };
+		B9400CFC2CA605ED008E7E7D /* SDL2_mixer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9400CF92CA605ED008E7E7D /* SDL2_mixer.framework */; };
+		B9400CFD2CA605ED008E7E7D /* SDL2_image.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9400CFA2CA605ED008E7E7D /* SDL2_image.framework */; };
+		B9400CFE2CA605ED008E7E7D /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9400CFB2CA605ED008E7E7D /* SDL2.framework */; };
+		B9400CFF2CA60606008E7E7D /* shaders in CopyFiles */ = {isa = PBXBuildFile; fileRef = B9400CEE2CA6046C008E7E7D /* shaders */; };
+		B9874B252CA707AF00DAAC89 /* sun.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = B9874B242CA707AF00DAAC89 /* sun.png */; };
+		B9874B282CA7133300DAAC89 /* bird.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = B9874B272CA7133300DAAC89 /* bird.png */; };
+		B9874B2B2CA72B4F00DAAC89 /* falcon.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = B9874B2A2CA72B4F00DAAC89 /* falcon.png */; };
+		B9874B2E2CA7483800DAAC89 /* sky.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = B9874B2D2CA7483800DAAC89 /* sky.jpg */; };
+		B9874B312CA74C1800DAAC89 /* blood.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = B9874B302CA74C1800DAAC89 /* blood.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		B9400CE22CA603FA008E7E7D /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 6;
 			files = (
+				B9874B2B2CA72B4F00DAAC89 /* falcon.png in CopyFiles */,
+				B9874B312CA74C1800DAAC89 /* blood.png in CopyFiles */,
+				B9400CFF2CA60606008E7E7D /* shaders in CopyFiles */,
+				B9874B2E2CA7483800DAAC89 /* sky.jpg in CopyFiles */,
+				B9874B282CA7133300DAAC89 /* bird.png in CopyFiles */,
+				B9874B252CA707AF00DAAC89 /* sun.png in CopyFiles */,
 			);
-			runOnlyForDeploymentPostprocessing = 1;
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		B9400CE42CA603FA008E7E7D /* hw1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = hw1; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9400CE72CA603FA008E7E7D /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		B9400CEE2CA6046C008E7E7D /* shaders */ = {isa = PBXFileReference; lastKnownFileType = folder; path = shaders; sourceTree = "<group>"; };
+		B9400CEF2CA6046C008E7E7D /* glm */ = {isa = PBXFileReference; lastKnownFileType = folder; path = glm; sourceTree = "<group>"; };
+		B9400CF02CA6046C008E7E7D /* stb_image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stb_image.h; sourceTree = "<group>"; };
+		B9400CF12CA6046C008E7E7D /* ShaderProgram.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ShaderProgram.cpp; sourceTree = "<group>"; };
+		B9400CF22CA6046C008E7E7D /* ShaderProgram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShaderProgram.h; sourceTree = "<group>"; };
+		B9400CF52CA605CA008E7E7D /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		B9400CF72CA605D1008E7E7D /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		B9400CF92CA605ED008E7E7D /* SDL2_mixer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2_mixer.framework; path = ../../../../../../../Library/Frameworks/SDL2_mixer.framework; sourceTree = "<group>"; };
+		B9400CFA2CA605ED008E7E7D /* SDL2_image.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2_image.framework; path = ../../../../../../../Library/Frameworks/SDL2_image.framework; sourceTree = "<group>"; };
+		B9400CFB2CA605ED008E7E7D /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2.framework; path = ../../../../../../../Library/Frameworks/SDL2.framework; sourceTree = "<group>"; };
+		B9874B242CA707AF00DAAC89 /* sun.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sun.png; path = ../../../../../Downloads/sun.png; sourceTree = "<group>"; };
+		B9874B262CA707B200DAAC89 /* sun.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sun.png; sourceTree = "<group>"; };
+		B9874B272CA7133300DAAC89 /* bird.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bird.png; path = ../../../../../Downloads/bird.png; sourceTree = "<group>"; };
+		B9874B292CA7133700DAAC89 /* bird.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bird.png; sourceTree = "<group>"; };
+		B9874B2A2CA72B4F00DAAC89 /* falcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = falcon.png; path = ../../../../../Downloads/falcon.png; sourceTree = "<group>"; };
+		B9874B2C2CA72D6C00DAAC89 /* falcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = falcon.png; sourceTree = "<group>"; };
+		B9874B2D2CA7483800DAAC89 /* sky.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = sky.jpg; path = ../../../../../Downloads/sky.jpg; sourceTree = "<group>"; };
+		B9874B2F2CA7483B00DAAC89 /* sky.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sky.jpg; sourceTree = "<group>"; };
+		B9874B302CA74C1800DAAC89 /* blood.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = blood.png; path = ../../../../../Downloads/blood.png; sourceTree = "<group>"; };
+		B9874B322CA74C1B00DAAC89 /* blood.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blood.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +70,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9400CFC2CA605ED008E7E7D /* SDL2_mixer.framework in Frameworks */,
+				B9400CFD2CA605ED008E7E7D /* SDL2_image.framework in Frameworks */,
+				B9400CFE2CA605ED008E7E7D /* SDL2.framework in Frameworks */,
+				B9400CF82CA605D1008E7E7D /* Cocoa.framework in Frameworks */,
+				B9400CF62CA605CA008E7E7D /* OpenGL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,8 +84,14 @@
 		B9400CDB2CA603FA008E7E7D = {
 			isa = PBXGroup;
 			children = (
+				B9874B302CA74C1800DAAC89 /* blood.png */,
+				B9874B2D2CA7483800DAAC89 /* sky.jpg */,
+				B9874B2A2CA72B4F00DAAC89 /* falcon.png */,
+				B9874B272CA7133300DAAC89 /* bird.png */,
+				B9874B242CA707AF00DAAC89 /* sun.png */,
 				B9400CE62CA603FA008E7E7D /* hw1 */,
 				B9400CE52CA603FA008E7E7D /* Products */,
+				B9400CF42CA605CA008E7E7D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,9 +106,31 @@
 		B9400CE62CA603FA008E7E7D /* hw1 */ = {
 			isa = PBXGroup;
 			children = (
+				B9874B292CA7133700DAAC89 /* bird.png */,
+				B9874B2C2CA72D6C00DAAC89 /* falcon.png */,
+				B9874B2F2CA7483B00DAAC89 /* sky.jpg */,
+				B9874B322CA74C1B00DAAC89 /* blood.png */,
+				B9874B262CA707B200DAAC89 /* sun.png */,
 				B9400CE72CA603FA008E7E7D /* main.cpp */,
+				B9400CEF2CA6046C008E7E7D /* glm */,
+				B9400CF12CA6046C008E7E7D /* ShaderProgram.cpp */,
+				B9400CF22CA6046C008E7E7D /* ShaderProgram.h */,
+				B9400CEE2CA6046C008E7E7D /* shaders */,
+				B9400CF02CA6046C008E7E7D /* stb_image.h */,
 			);
 			path = hw1;
+			sourceTree = "<group>";
+		};
+		B9400CF42CA605CA008E7E7D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B9400CFA2CA605ED008E7E7D /* SDL2_image.framework */,
+				B9400CF92CA605ED008E7E7D /* SDL2_mixer.framework */,
+				B9400CFB2CA605ED008E7E7D /* SDL2.framework */,
+				B9400CF72CA605D1008E7E7D /* Cocoa.framework */,
+				B9400CF52CA605CA008E7E7D /* OpenGL.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -120,6 +191,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B9400CE82CA603FA008E7E7D /* main.cpp in Sources */,
+				B9400CF32CA6046C008E7E7D /* ShaderProgram.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,6 +317,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					/Library/Frameworks/SDL2.framework/Versions/A/Headers,
+					/Library/Frameworks/SDL2_image.framework/Versions/A/Headers,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -253,6 +333,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					/Library/Frameworks/SDL2.framework/Versions/A/Headers,
+					/Library/Frameworks/SDL2_image.framework/Versions/A/Headers,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
